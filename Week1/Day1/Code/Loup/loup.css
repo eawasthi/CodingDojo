@@ -1,0 +1,70 @@
+*{
+	
+	border-radius: 20px;
+}
+
+#Wrapper{
+	background-color: grey;
+	width: 800px;
+	height: 600px;
+	margin: 40px;
+	padding: 10px;
+}
+
+#header{
+	background-color: lightgrey;
+	height: 90px;
+	font-size: 20px;
+	padding: 2px;
+	
+}
+
+#navigator{
+	background-color: lightgrey;
+	height: 280px;
+	width: 185px; 
+	position: relative;	
+	top:25px;
+	padding: 10px;
+}
+#home{
+	font-size: 8px;
+	color:blue;
+}
+.list1{
+	color:blue;
+	font-size: 15px;
+	position: relative;
+	right: 20px;
+	bottom: 10px;
+}
+#list2{
+	font-size: 10px;
+	position: relative;
+	right: 25px;
+	
+}
+#list3{
+	color:blue;
+}
+
+#red{
+	color:red;
+}
+
+#maincontent{
+	background-color: grey;
+	width:560px;
+	height: 370px;
+	position: relative;
+	bottom:275px;
+	left:220px;
+	padding: 10px;
+}
+#footer{
+	background-color: lightgrey;
+	height: 40px;
+	position: relative;
+	bottom:260px; 
+	padding: 10px;
+}

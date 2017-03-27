@@ -1,0 +1,207 @@
+*{
+	margin:0px;
+	padding: 0px; 
+}
+
+
+.wrapper{
+	width: 600px;
+	height:915px;
+	background-color: white;
+	margin:10px;
+
+}
+.h1{
+	width: 600px;
+	height: 40px;
+	background-color: lightgrey;
+	vertical-align: top;
+}
+.pic1{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+.last1{
+	display: inline-block;
+	font-size: 15px;
+	vertical-align: top;
+	margin: 5px 10px 0px 1px;
+	border-right: ridge;
+	height: 35px;
+	margin-bottom: 5px;
+	padding-right: 8px;
+
+}
+
+#url{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 11px;
+	border-radius: 10px;
+	margin-left: 55px;
+}
+.symbol{
+	vertical-align: top;
+	margin-right:10px; 
+	position: relative;
+	top:10px; 
+	right:22px;
+	height: 17px;
+
+}
+
+
+
+
+
+.pic2{
+	width: 600px;
+	height: 250px;
+}
+.p1 p{
+	display: inline-block;
+	color: lightblue;
+	font-size: 8px;
+	margin:5px;
+	vertical-align: top;
+}
+#accordance{
+	color: white;
+}
+
+.p1{
+	width: 600px;
+	height: 270px;
+	margin-top: 15px;
+	background-color: black;
+}
+.he2{
+	width: 600px;
+	height: 70px;
+	margin-top: 10px;
+	display: inline-block;
+	border:ridge;
+}
+.browse{
+	width: 140px;
+	height: 30px;
+	background-color: blue;
+	color: white;
+	vertical-align: top;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.he2 p{
+	font-size: 25px;
+	color: lightgrey;
+	vertical-align: top;
+	margin: 19px;
+	display: inline-block;
+}
+
+.mc{
+	width: 600px;
+	height: 260px;
+	background-color: white;
+	display: block;
+}
+
+.boxes{
+	width: 134px;
+	height:210px;
+	display: inline-block;
+	background-color: white;
+	margin: 3px;
+	vertical-align: top;
+	border-left: ridge;
+}
+
+.icon1{
+	margin: 5px;
+	display: inline-block;
+}
+.hmc{
+	
+	display: inline-block;
+	font-size: 10px;
+	vertical-align: top;
+	margin-top: 10px;
+}
+.boxes p{
+	font-size: 8px;
+	margin: 5px;
+}
+.pic3{
+	margin: 5px;
+}
+.pic4{
+	margin: 5px;
+	height: 85px;
+	width: 130px;
+}
+
+.now{
+	width: 130px;
+	height: 30px;
+	background-color: blue;
+	color:white;
+	margin: 3px;
+}
+.pic5{
+	margin: 11px 4px;
+
+}
+
+.pic6{
+	margin: 5px 4px;
+
+}
+.mcf1{
+	height: 35px;
+	width: 590px;
+	border:ridge;
+}
+
+.ft1{
+	width: 600px;
+	height: 190px;
+}
+
+.one{
+	width: 86px;
+	height: 175px;
+	display: inline-block;
+	margin: 5px;
+	vertical-align: top;
+}
+.f1h1{
+	font-size: 10px;
+	margin-top: 20px;
+
+}
+.ft1 p{
+	font-size: 7px;
+	margin-top:2px;
+}
+
+
+.ft2{
+	width: 600px;
+	height: 50px;
+	border-top:ridge;
+}
+.ft2 p{
+	font-size:10px; 
+}
+span{
+	color: blue;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+  pwd 
+  mkdir test
+  ls
+  touch test/index.html 
+  ls
+  ls test/
+  touch test/styles.css test/commands.txt
+  ls test/
+  cp test/index.html test/
+  cp test/index.html test/index_2.html
+  ls
+  ls test/
+  rm -i test/styles.css 
+  ls test/
+  cd ../../
+  pwd
+  cd ../
+  ls 
+  cd Users/ektaawasthi/Desktop/
+  mkdir destinantion
+  ls destinantion/
+  pwd
+  mv test/index_2.html destinantion/
+  ls test/
+  ls destinantion/
+  rm -rf destinantion/
+  history

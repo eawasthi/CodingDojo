@@ -1,0 +1,199 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+.wrapper{
+	width:800px;
+	height:650px;
+	background-color: white; 
+}
+.header1{
+	width:800px;
+	height: 50px;
+	background-color: white;
+}
+.firstpicture{
+	height: 62px;
+	width: 65px;
+	display: inline-block;
+}
+.header1 p{
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 13px;
+	font-size: 30px;
+}
+#net{
+	color: blue;
+}
+.header2{
+	width:800px;
+	height: 50px;
+	background-color: lightblue;
+}
+.header2 p{
+	color: white;
+	padding-top: 10px;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.sidebar{
+	width:185px;
+	height:209px;
+	background-color: red;
+	display: inline-block;
+	vertical-align: top;
+
+}
+.picture2{
+	position: absolute;
+	height: 280px;
+	width: 185px;
+	display: block;
+	margin-top: 175px;	
+}
+.button1{
+	background-color: blue;
+	border-radius: 10px;
+	height: 35px;
+	width: 140px;
+	position: relative;
+	bottom: 345px;
+	left: 20px;
+
+}
+.button2{
+	background-color: #ee8400;
+	position: relative;
+	border-radius: 10px;
+	height: 35px;
+	width: 140px;
+	bottom:338px;
+	left: 20px;
+}
+.button3{
+	background-color:#ee8400;
+	position: relative;
+	height: 35px;
+	width: 140px;
+	bottom: 10px;
+	right:-22px;
+}
+
+.picture3{
+	position: relative;
+	height: 120px;
+	width: 81px;
+	display: block;
+	margin-top: 227px;
+	margin-left: 50px;
+	top: 50px;
+}
+#weeks{
+	color: purple;
+	margin-top: 60px;
+	margin-left: 43px;
+	color: white;
+}
+h2{
+	position: absolute;
+	top:372px;
+	left: 10px;
+	right: 3px;
+	color: white;
+}
+
+.content{
+	width: 610px;
+	height: 400px;
+	background-color: purple;
+}
+
+.main_content p{
+	color:red;
+	vertical-align: top;
+	display: inline-block;
+}
+.main_content{
+	display: inline-block;
+}
+
+.footer{
+	width:605px;
+	height: 95px;
+	background-color: pink;
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 2x;
+	border-top: solid;
+	border-left: solid;
+	border-right: solid;
+}
+.big{
+	height:90px;
+	width: 110px;
+
+}
+
+
+
+
+.main_content span{
+	margin-left: 427px;
+	font-size: 15px;
+}
+
+.header3{
+	width:610px;
+	height:95px;
+	background-color: white;
+
+}
+
+.left{
+	width: 15%;
+	height: 70px;
+	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+}
+.right{
+	width: 210px;
+	height: 80px;
+	background-color: white;
+	display: inline-block;
+	margin-left: 300px;
+}
+.home{
+	width: 25px;
+	height: 23px;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+#test{
+	color: black;
+}
+#monday{
+	color: blue;
+	margin-left: 47px;
+	font-size: 12px;	
+
+}
+.phone{
+	height:35px;
+	width: 35px;
+	display: inline-block;
+}
+#test1{
+	color: blue;
+	font-size: 28px;
+	margin-top: 2px;
+	margin-left: 5px;
+}
+#test2{
+	color: blue;
+	font-size: 12px;
+	margin-left: 47px;
+}

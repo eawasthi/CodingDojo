@@ -1,0 +1,195 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#wrapper{
+	width: 600px;
+	height:620px;
+	background-color: purple;
+	margin:10px;
+}
+
+
+#header {
+	height:60px;
+	background-color: grey;
+}
+
+#header h2 {
+	margin: 20px 40px;
+	font-family: sans-serif;
+	display: inline-block;
+}
+#header h3 {
+	margin: 20px 0px 20px 200px;
+	font-family: sans-serif;
+	display: inline-block;
+}
+
+.image {
+	width:272px;
+	height:200px;
+	margin: 10px 5px 0px 10px;
+	background-color: orange;
+	display: inline-block;
+	margin: 10px 5px 0px 10px;
+	border: 4px solid gray;
+	}
+
+#about{
+	width:280px;
+	height:204px;
+	background-color: gray;
+	display: inline-block;
+	margin: 10px 10px 0px 5px;
+	vertical-align: top;
+}
+#about h3 {
+	font-family: sans-serif;
+	margin: 0px;
+	background: linear-gradient(darkgrey, lightgrey, darkgrey);
+}
+
+
+#la_mode {
+	width:180px;
+	height:270px;
+	background-color: white;
+	display: inline-block;
+	margin: 10px 5px 0px 10px;
+	vertical-align: top;
+}
+/*
+#la_mode h3 {
+	font-family: sans-serif;
+	margin: 0px;
+	background: linear-gradient(darkgrey, lightgrey, darkgrey);
+}
+*/
+
+.title {
+	font-family: sans-serif;
+	margin: 0px;
+	background: linear-gradient(darkgrey, lightgrey, darkgrey);
+}
+.image1 {
+	height:40%;
+	margin: auto;
+	display: block;
+	width: 100%;
+	}
+#la_mode p{
+	font-size:8px;
+}
+.icon1{
+	height: 10%;
+	display: inline;
+	margin-left: 5px;
+	margin-top: 4px;
+	align-self: all;
+}
+
+#submit{
+	display: block;
+	text-align: center;
+	border-collapse: separate;
+	border-radius: 40%;
+}
+
+
+#Family_contact {
+	width:180px;
+	height:270px;
+	background-color: white;
+	display: inline-block;
+	margin: 10px 5px 0px 10px;
+	vertical-align: top;
+}
+
+/*
+#Family_contact h3 {
+	font-family: sans-serif;
+	margin: 0px;
+	background: linear-gradient(darkgrey, lightgrey, darkgrey);
+}
+*/
+
+.image1 {
+	height:40%;
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+#Family_contact p{
+	font-size:8px;
+}
+.icon1{
+	height: 10%;
+	display: inline;
+	margin-left: 5px;
+	margin-top: 4px;
+	align-self: all;
+}
+
+#submit{
+	display: block;
+	text-align: center;
+	border-collapse: separate;
+	border-radius: 40%;
+}
+
+
+
+#fiveElven {
+	width:180px;
+	height:270px;
+	background-color: white;
+	display: inline-block;
+	margin: 10px 5px 0px 10px;
+	vertical-align: top;
+}
+
+#fiveElven h3 {
+	font-family: sans-serif;
+	margin: 0px;
+	background: linear-gradient(darkgrey, lightgrey, darkgrey);
+}
+
+.image1 {
+	height:40%;
+	margin: auto;
+	display: block;
+	width: 100%;
+	}
+#fiveElven p{
+	font-size:8px;
+}
+.icon1{
+	height: 10%;
+	display: inline;
+	margin-left: 5px;
+	margin-top: 4px;
+	align-self: all;
+}
+
+#submit{
+	display: block;
+	text-align: center;
+	border-collapse: separate;
+	border-radius: 40%;
+}
+
+#footer{
+	height:40px;
+	background-color: red;
+	margin-top: 17px;
+}
+#footer p{
+	text-align: center;
+
+}
+.icon3{
+	
+	height:10px
+}

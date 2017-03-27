@@ -1,0 +1,177 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+
+#wrapper{
+	width: 869px;
+	height:880px;
+	background-color: #265175;
+}
+
+#size{
+	height: 20px;
+	text-align: right;	
+}
+#size p{
+	color: white;
+}
+.bar{
+	color: yellow;
+	text-decoration: underline;
+}
+
+#header1{
+	width:868px;
+	height: 100px;
+	background-color: #265175;
+
+}
+
+
+#firstpicture{
+	height:90px;
+	width: 400px;
+	display: inline-block;
+}
+#url{
+	text-align: left;
+	margin-left: 23px; 
+	margin-top: 5px;
+}
+#go{
+	text-align: right;
+}
+#sea{
+height: 30px;
+width: 200px;
+background-color: black;
+display: inline-block;
+margin-left: 263px;
+vertical-align: top;
+border-radius: 10px
+}
+
+#header2{
+	width:780px;
+	height: 40px;
+	background-color: #0d86ea;
+	display: inline-block;
+	border-radius: 5px;
+	margin-left: 60px;
+
+}
+#help {
+	display: inline;
+	color:white;
+	margin-left: 25px;
+	word-spacing: 50px;
+	margin-top: 10px;
+
+
+}
+#afterheaderbox1{
+
+	width:350px;
+	height: 300px;
+	background-color: #265175;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	
+
+}
+
+#afterheaderbox1 li{
+	color: white;
+	list-style-position: outside;
+	text-decoration: underline;
+	text-align: center;
+} 
+
+#afterheaderbox2{
+	width:515px;
+	height: 300px;
+	background-color:#265175;
+	display: inline-block;
+	margin-top: 20px;
+	color: white;
+}
+#yellow {
+	color:yellow;
+	padding-top: 20px;
+	text-align: center;
+}
+h4{
+	color: white;
+	text-align: center;
+}
+
+
+#maincontent1{
+	width:434px;
+	height: 300px;
+	background-color: white;
+	display: inline-block;
+	padding-top: 20px;
+
+}
+
+pre{
+	padding-top: 5px;
+	text-align: center;
+	padding-bottom: 10px;
+
+}
+h5{
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+ul li{
+	color: blue;
+	text-align: center;
+	margin-left: 20px;
+	list-style: square;
+	list-style-position: outside;
+
+}
+#hell{
+	height:20px
+	color: red;
+
+}
+#maincontent1 p{
+	text-align: center;
+	padding-bottom: 10px;
+
+}
+#maincontent2{
+	width:435px;
+	height:300px;
+	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 20px;
+
+}
+#maincontent2 p{
+	text-align: center;
+	padding-bottom: 10px;
+
+}
+#footer{
+	width:870px;
+	height: 10px;
+	background-color: #265175;
+}
+#footer ul li{
+	color: white;
+	display: inline-block;
+	padding-top: 40px;
+	text-align: center;
+	padding-left: 70px;
+	list-style-position:outside;
+}
+
