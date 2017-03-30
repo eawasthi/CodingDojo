@@ -1,0 +1,36 @@
+.wrapper{
+	width: 700px;
+	height: 900px;
+	background-color: yellow;
+	margin: 10px;
+}
+.box{
+	width: 700px;
+	height: 120px;
+	border: 1px solid black;
+}
+.click{
+	background-color: white;
+}
+.almonds{
+	width: 50px;
+	display: inline-block;
+}
+.almonds1{
+	width: 50px;
+	display: inline-block;
+}
+.strawberry{
+	width: 50px;
+	display: inline-block;
+}
+.banana{
+	width: 50px;
+	display: none;
+}
+.pineapple1{
+	width: 50px;
+}
+.testclass img{
+	height: 70px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+	<link rel="stylesheet" type="text/css" href="user.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+			//$('.header').append($("form").serialize());
+			//$("#location\\[state_id\\]").val("5")
+		$(document).ready(function(){
+			$('.btn').click(function(){
+			var fname=$('#test10').val();
+			var fname1=$('#test11').val();
+			var fname2=$('#test12').val();
+			var fname3=$('#test13').val();
+			$('.first').append(fname);
+			$('.sec').append(fname1);
+			$('.thi').append(fname2);
+			$('.fort').append(fname3);
+			})
+		});
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="header">
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Contact Number</th>
+  </tr>
+  <tr>
+    <td class="first"></td>
+    <td class="sec"></td>
+    <td class="thi"></td>
+    <td class="fort"></td>
+  </tr>
+</table>
+	</div>
+	<div class="Auser"><h1>Add User</h1></div>
+	<div class="Uform">
+		<form class="test">
+			First Name: <input type="text" id="test10" name="first_name"><br>
+			Last Name: <input type="text" id="test11" name="last_name"><br>
+			Email Address: <input type="text" id="test12"  name="e_address"><br>
+			Contact Number: <input type="text" id="test13" name="c_num"><br>
+
+		</form>
+		<button class="btn">Add User</button>
+	</div>
+
+</div>
+</body>
+</html>

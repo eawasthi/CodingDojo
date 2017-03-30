@@ -1,0 +1,44 @@
+*{
+	width: 0px;
+	padding:0px;
+}
+.wrapper{
+	width: 1000px;
+	height: 900px;
+	background-color: blue;
+	margin:40px;
+}
+.box1{
+	width: 200px;
+	height: 50px;
+	display: block;
+	border-bottom: ridge;
+}
+ img{
+	height: 50px;
+	width: 200px;
+}
+.box2{
+	width: 200px;
+	height: 50px;
+	display: block;
+	border-bottom: ridge;
+}
+.box3{
+	width: 200px;
+	height: 50px;
+	display: block;
+	border-bottom: ridge;
+}
+.box4{
+	width: 200px;
+	height: 50px;
+	display: block;
+	border-bottom: ridge;
+}
+.box5{
+	width: 200px;
+	height: 50px;
+	display: block;
+	border-bottom: ridge;
+}

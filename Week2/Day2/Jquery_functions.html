@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="eg">
+<head>
+	<title>My jQuery basic assignment!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="jQuery_functions.css">
+	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.clickbutton').click(function(){
+				alert('You are about to leave this page. Please prepare yourself!');
+			})
+			$('.hidemessege').hover(function(){
+				$('.hidemessege').hide();
+				$('.hidemessege').show();
+			})
+
+			$('.button1').click(function(){
+				$('.almonds').toggle();
+			})
+			$('.slideUp').click(function(){
+				$('.slidebutton').slideUp('slow');
+			})
+				$('.slideDown').click(function(){
+				$('.slidebutton').slideDown('slow');
+			
+			})
+				$('.button2').click(function(){
+				$('.almonds1').slideToggle();
+
+			})
+			//	$('.button3').click(function(){
+			//	$('.strawberry').fadeOut();	
+			//})
+				$('.button4').click(function(){
+				$('.banana').fadeIn();	
+			})
+				$('.button5').click(function(){
+				$('.pineapple').addClass("pineapple1");	
+			})
+				$('.button6').click(function(){
+				$('.textb').before('<p>Writing before text</p>');	
+			})
+
+				$('.button7').click(function(){
+				$('.texta').before('<p>Writing after text</p>');	
+			})
+				$('.button8').click(function(){
+				$('.beforepEnd').append('<p>Writing after paragaraph</p>');	
+
+			})
+				$('.button9').click(function(){
+				$('.htmlBox').html('<p><i>Writing after paragaraph<i></p>');	
+
+			})
+				//$('.button9').click(function(){
+				//$('#ekta').attr("width", "500");
+
+			//});
+				$('.button10').click(function(){
+				 $("img").attr("width", "50");	
+			})
+
+				$('.button11').click(function(){
+				$("input:text").val("Ekta Awasthi");	
+			})
+
+		})
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header box">
+			<h1>My jQuery Basic Assignment</h1>
+		</div>
+		<div class="click box">
+			<h3>Click and Get an Alert</h3>
+			<button class="clickbutton">Click Here</button>
+		</div>
+		<div class="hide box">
+			<h3>Hover Mouse that dispears and shows back quickly</h3>
+			<p class="hidemessege">This message will disappear, AMAZING!</p>
+		</div>
+		<div class="toggle box">
+			<h3>Toogle Button to hide and show image</h3>
+			<button class="button1">Click for almonds</button>
+			<img class="almonds" src="http://www.healthandbloom.com/img/almonds-face-packs.jpg" />
+		</div>
+		<div class="sd box">
+			<h3>Slidedown image</h3>
+			<button class="slideUp">slide me up</button>
+			<button class="slideDown">slide me down</button>
+			<p class="slidebutton">I slide down and up</p>
+		</div>
+		<div class="st box">
+			<button class="button2">click me</button>
+			<img class="almonds1" src="http://kingofwallpapers.com/almond/almond-013.jpg" />
+		</div>
+		<div class="fadeIn box">
+			<button class="button3">click me</button>
+			<img class="strawberry" src="http://www.adagio.com/images5/flavor_thumbnail/strawberry.jpg" />
+		</div>
+		<div class="fadeOut box">
+			<button class="button4">click me</button>
+			<img class="banana" src="http://az616578.vo.msecnd.net/files/2014/09/18/635466665091886321743136955_Banana.jpg" />
+		</div>
+		<div class="addClass box">
+			<button class="button5">click me</button>
+			<img class="pineapple" src="https://www.organicfacts.net/wp-content/uploads/2013/06/Pineapple.jpg" />
+		</div>
+		<div class="before box">
+			<button class="button6">click me</button>
+			<p class="textb">Please write before me</p>
+		</div>
+		<div class="after box">
+			<button class="button7">click me</button>
+			<p class="texta">Please write before me</p>
+		</div>
+		<div class="append box">
+			<button class="button8">click me</button>
+			<p class="beforepEnd">Please write before paragaraph ends</p>
+		</div>
+		<div class="html box">
+			<button class="button9">click me</button>
+			<p class="htmlBox">Please write before paragaraph ends</p>
+		</div>
+		<div class="testclass box">
+			<button class="button10">click me</button>
+			<img class="apple20" src="https://www.organicfacts.net/wp-content/uploads/2013/06/Pineapple.jpg" />
+		</div>
+		<div class="val box">
+			<button class="button11">click me</button>
+			<p class="fullname">Name: <input type="text" name="user"></p>
+		</div>
+		<div class="text box"></div>
+		<div class="data box"></div>
+	</div>
+
+</body>
+</html>

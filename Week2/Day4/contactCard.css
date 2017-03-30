@@ -1,0 +1,39 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+
+.wrapper{
+	background-color: grey;
+}
+form{
+	display:block;
+}
+
+input{
+	display: block;
+	margin: 10px;
+}
+textarea{
+	margin: 10px;
+	width: 200px;
+	height: 100px;
+}
+
+button{
+	display:block;
+}
+.container{
+	display: inline-block;
+	width: 400px;
+	vertical-align: top;
+	background-color: red;
+}
+#card{
+	background-color: pink;
+	height: 100px;
+	width: 200px;
+}
+#back{
+	display: none;
+}

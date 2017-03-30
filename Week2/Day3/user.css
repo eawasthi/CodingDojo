@@ -1,0 +1,52 @@
+*{
+	margin:0px;
+	padding:0px;	
+}
+.wrapper{
+	width: 900px;
+	height: 900px;
+	background-color: grey;
+	margin:20px;
+}
+.header{
+	width: 800px;
+	height: 100px;
+	border:solid;
+	display: inline-block;
+	margin:20px;
+}
+.header ul li{
+	display: inline-block;
+	margin: 50px;
+	font-weight:bold;
+}
+.Auser{
+	margin-left: 10px;
+	font-size: 30px;
+}
+.Uform{
+	width: 300px;
+	height: 500px;
+	border-top: solid;
+	display: inline-block;
+	padding-top: 20px;
+}
+.test{
+	display: inline-block;
+	text-align: right;
+}
+.btn{
+	height: 10px;
+	width: 94px;
+	margin-left: 150px;
+	margin-top:20px;
+
+}
+th{
+	font-size: 20px;
+	margin: 30px;
+	padding: 10px;
+}
+td{
+	padding-left: 10px;
+}
