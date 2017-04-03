@@ -1,0 +1,57 @@
+.wrapper{
+	width: 100%;
+	background:linear-gradient(yellow,red,yellow);
+
+}
+h1{
+	margin-left: 265px;
+	padding-top: 20px;
+}
+.pics{	
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+}
+.infoBox{
+	width: 362px;
+	height: 530px;
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 190px;
+}
+.name{
+	width: 355px;
+	height: 150px;
+	border:solid;
+	display: block;
+	vertical-align: top;
+}
+.images{
+	width: 355px;
+	height: 150px;
+	border:solid;
+	display: block;
+}
+.types{
+	width: 355px;
+	height: 150px;
+	border:solid;
+	display: block;
+}
+.height{
+	width: 355px;
+	height: 150px;
+	border:solid;
+	display: block;
+}
+.weight{
+	width: 355px;
+	height: 150px;
+	border:solid;
+	display: block;
+}
+
+h4{
+	margin-left: 22px;
+	color:red;
+}

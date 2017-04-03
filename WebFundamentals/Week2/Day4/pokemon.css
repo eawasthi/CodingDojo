@@ -1,0 +1,62 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper{
+	width: 1150px;
+	margin: 20px;
+	background-color:#00c3ff;
+}
+.poke{
+	width: 700px;
+	height: 1400px;
+	display: inline-block;
+	margin-top:10px;
+}
+.test{
+	width: 200px;
+	height:1400px;
+	display: inline-block;
+	margin-top:10px;
+	vertical-align: top;
+}
+#box1{
+	width: 350px;
+	height: 500px;
+	display: block;
+	border: solid;
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+.nama{
+	width: 100px;
+	height: 100px;
+	vertical-align: top;
+	display: block;
+}
+.imagine{
+	width: 100px;
+	height: 100px;
+	vertical-align: top;
+	display: block;
+}
+.typo{
+	width: 100px;
+	height: 100px;
+	vertical-align: top;
+	display: block;
+
+}
+.hto{
+	width: 100px;
+	height: 100px;
+	vertical-align: top;
+	display: block;
+}
+.wtf{
+	width: 100px;
+	height: 100px;
+	vertical-align: top;
+	display: block;
+}
+

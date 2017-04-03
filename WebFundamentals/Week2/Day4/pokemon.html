@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokimon Assignment</title>
+	<link rel="stylesheet" type="text/css" href="pokemon.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		
+		$(document).ready(function(){
+		for (var i=1; i<=151; i++){
+		var pokemonpicture = '<img id='+i+' src="http://pokeapi.co/media/img/'+i+'.png">'
+		$('.poke').append(pokemonpicture);
+		}
+
+		$(document).on('click', 'img', function () {
+		var pokeID = 'http://pokeapi.co/api/v1/pokemon/${$(this).attr("id")}';
+		var pokeimage = 'http://pokeapi.co/media/img/${$(this).attr("id")}.png';
+		$('.imagine').html('<img src="${pokeimage}" />');
+
+
+		$.get("http://pokeapi.co/api/v1/pokemon/"+ vipul +"/", function(res) {
+			   for(var i = 0; i < res.types.length; i++) {
+			   	var nama1=res.name;
+			   	var typo1=res.types[i].name;
+			   	var hto1=res.height;
+			   	var wtf1=res.weight;
+        //console.log(res.name,res.types[i].name,res.height,res.weight);
+    }
+		$('img').click(function(){
+		$('.nama').append(nama1);
+		$(this).appendTo('.imagine');
+		$('.typo').append(typo1);
+		$('.hto').append(hto1);
+		$('.wtf').append(wtf1);
+		});
+
+		}), "json";
+	});
+		})
+
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="poke"></div>
+		<div class="test">
+			<div id="box1">
+				<div class="nama"></div>
+				<div class="imagine"></div>
+				<div class="typo"> Types <br></div>
+				<div class="hto">Height <br></div>
+				<div class="wtf">Weight <br></div>
+			</div>
+		</div
+	</div>
+</body>
+</html>
