@@ -20,7 +20,7 @@ print "my age is", age
 name=23
 print "my name is", name
 """
-first_name="Ekta"
-last_name="Awasthi"
-print "My name is {} {}".format(first_name, last_name)
+#first_name="Ekta"
+#last_name="Awasthi"
+#print "My name is {} {}".format(first_name, last_name)
 #print "My name is " + first_name + " " + last_name 
