@@ -1,0 +1,29 @@
+#wrapper{
+	width: 800px;
+	height: 800px;
+	margin: 20px;
+}
+.pic{
+	width: 700px;
+	height: 400px;
+	margin: 20px;	
+}
+img{
+	height: 400px;
+	margin-left: 200px;
+}
+.button1{
+	margin-left: 300px;
+}
+#wrapper h1{
+	text-align: center;
+}
+.wrapper1{
+	width: 800px;
+	height: 800px;
+	margin: 20px;
+}
+.wrapper1 img{
+	width: 700px;
+	height: 700px;
+}

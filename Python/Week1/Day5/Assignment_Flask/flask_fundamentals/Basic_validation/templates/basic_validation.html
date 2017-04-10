@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Validation</title>
+</head>
+<body>
+	<form action='/validation' method='POST'>
+		Name:<input type="text" name="name">
+		<h4>Dojo Location:</h4>
+		<select name="location">
+			<option>San Jose</option>
+			<option>California</option>
+			<option>Seattle</option>
+		</select>
+		<h4>Favoite Langugae:</h4>
+		<select name="language">
+			<option>Python</option>
+			<option>Ruby</option>
+			<option>JS</option>
+		</select>
+		<h4>Comment (Optional):</h4>
+		<textarea name="comment1"></textarea><br>
+		<input type="submit" name="Submit">
+	</form>
+		<div>
+			{% with validations = get_flashed_messages() %}
+				{% if validations %}
+					{% for message in validations %}
+						<h1>{{message}}</h1>
+					{% endfor %}
+				{% endif %}
+			{% endwith %}
+		</div
+</body>
+</html>

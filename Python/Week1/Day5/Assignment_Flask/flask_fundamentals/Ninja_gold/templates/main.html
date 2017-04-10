@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='gold.css') }}">
+<!-- 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        	$(document).ready(function (){
+			$(".button1").click(function(){
+			$('.history').append({{session['log']|tojson|safe}});	
+			})
+			})
+        </script> --> 		
+</head>
+<body>
+	<div class="wrapper">
+		<div class="gold_count">
+			<h1>Your Gold:</h1>
+			<p>{{session['total']}}</p>
+		</div>
+		<div class="fourBox">
+			<div class="one">
+				<h1>Farm</h1><br><br>
+				<h6>(earn 10-20 golds)</h6>
+				<form action='/process_money' method='POST' class="fgold">
+				  <input type="hidden" name="building" value="farm" />
+				  <input class="button1" type="submit" value="Find Gold!"/>
+				</form> 
+			</div>
+			<div class="one">
+				<h1>Cave</h1><br><br>
+				<h6>(earn 5-10 golds)</h6>
+				<form action="/process_money" method="post" class="fgold">
+				  <input type="hidden" name="building" value="cave" />
+				  <input class="button1" type="submit" value="Find Gold!"/>
+				</form> 
+			</div>
+			<div class="one">
+				<h1>House</h1><br><br>
+				<h6>(earn 2-5 golds)</h6>
+				<form action="/process_money" method="post" class="fgold">
+				  <input type="hidden" name="building" value="house" />
+				  <input class="button1" type="submit" value="Find Gold!"/>
+				</form> 
+			</div>
+			<div class="one">
+				<h1>Casino</h1><br><br>
+				<h6>(earn/takes 0-50 golds)</h6>
+				<form action="/process_money" method="post" class="fgold">
+				  <input type="hidden" name="building" value="casino" />
+				  <input class="button1" type="submit" value="Find Gold!"/>
+				</form> 
+			</div>
+		</div>
+		<div class="history">
+		{{session['log']}}
+		</div>
+	</div>
+</body>
+</html>

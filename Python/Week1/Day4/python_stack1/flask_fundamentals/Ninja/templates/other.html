@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All the Ninjas</title>
+</head>
+<body>
+	<div class="wrapper1">
+		{% if ninja=='1' %}
+			<img alt='1' src="{{url_for('static', filename='Ninjas/1.jpg')}}">
+		{% elif ninja =='2' %}
+			<img alt='2' src="{{url_for('static', filename='Ninjas/2.jpg')}}">
+		{% elif ninja =='3' %}
+			<img alt='3' src="{{url_for('static', filename='Ninjas/3.jpg')}}">
+		{% elif ninja =='4' %}
+			<img alt='4' src="{{url_for('static', filename='Ninjas/4.jpg')}}">
+		{% elif ninja =='other' %}
+			<img alt='5' src="{{url_for('static', filename='Ninjas/notapril.jpg')}}">
+		{% endif %}
+	</div>
+
+
+</body>
+</html>

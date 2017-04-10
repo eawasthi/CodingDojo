@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advance Validation</title>
+</head>
+<body>
+<form action='/advanced' method='Post'>
+	Email:<input type="text" name="email"><br>
+	First_name:<input type="text" name="first"><br>
+	Last_name:<input type="text" name="last"><br>
+	Password:<input type="Password" name="password"><br>
+	Confirm_password:<input type="password" name="password_confirm"><br>
+	<input type="submit" name="submit">
+</form>
+	<div>
+		{% with messages = get_flashed_messages(with_categories=true) %}
+			{% if messages %}
+			<ul class='flashes'>
+				{% for category, message in messages %}
+				<li class='{{ category }}'>{{message}}</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		{% endwith %}
+	</div>
+</body>
+</html>
