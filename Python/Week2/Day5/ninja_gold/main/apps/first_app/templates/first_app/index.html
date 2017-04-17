@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title></title>
+        {% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'test.css' %}" media='screen' title='no title' charset='utf-8'>
+      </head>
+<body>
+	<div class="wrapper">
+		<div class="gold_count">
+			<h1>Your Gold: {{request.session.total}} </h1>
+		</div>
+		<div class="fourBox">
+			<div class="one">
+				<h1>Farm</h1><br><br>
+				<h6>(earn 10-20 golds)</h6>
+				<form action='/process_money' class="fgold" method='POST'>
+					{% csrf_token %}
+				  <input type="hidden" name="building" value="farm" />
+				  <input class="button1" type="submit" value="Find Gold!"/>
+				  {{random}}
+				</form> 
+			</div>
+			<div class="one">
+				<h1>Cave</h1><br><br>
+				<h6>(earn 5-10 golds)</h6>
+				<form action="/process_money" method="post" class="fgold">
+					{% csrf_token %}
+				  <input type="hidden" name="building" value="cave" />
+				  <input class="button1" type="submit" value="Find Gold!"/>
+				  {{random1}}
+				</form> 
+			</div>
+			<div class="one">
+				<h1>House</h1><br><br>
+				<h6>(earn 2-5 golds)</h6>
+				<form action="/process_money" method="post" class="fgold">
+					{% csrf_token %}
+				  <input type="hidden" name="building" value="house" />
+				  <input class="button1" type="submit" value="Find Gold!"/>
+				{{random2}}
+				</form> 
+			</div>
+			<div class="one">
+				<h1>Casino</h1><br><br>
+				<h6>(earn/takes 0-50 golds)</h6>
+				<form action="/process_money" method="post" class="fgold">
+					{% csrf_token %}
+				  <input type="hidden" name="building" value="casino" />
+				  <input class="button1" type="submit" value="Find Gold!"/>
+				{{random3}}
+				</form> 
+			</div>
+		</div>
+	<div id='activities'>
+		<textarea rows="20" cols="100">{{request.session.activities}}</textarea>
+	</div>
+</body>
+</html>

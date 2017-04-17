@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Coding Dojo Wall</p>
+<p>Post a Comment!!</p>
+<textarea></textarea>
+<form action='/welcome' method='POST'>
+<a href="/">Post a Comment</a><br>
+<a href='/'>log off</a>
+</form>
+<h1>Welcome {{ user }} </h1>
+ <form action='/messeges' method='POST'>
+    <label for="messege">Email:<input type="text" name="messege" id="messege"</label>
+    <input type="submit" value="Submit">
+  </form>
+  
+        {% for i in varInHtml: %}
+          <tr>
+            <td>{{ i['email'] }}</td>
+            <td>{{ i['created_at'] }}</td>
+          </tr>
+        {% endfor %}
+    
+</body>
+</html>
+
+

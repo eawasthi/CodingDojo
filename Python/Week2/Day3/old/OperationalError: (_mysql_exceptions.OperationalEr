@@ -1,0 +1,16 @@
+OperationalError: (_mysql_exceptions.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+Answer: The password has to be root beacuse it needs to match up with the user.
+
+OperationalError: (_mysql_exceptions.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' (61)")
+
+Answer:The port has to match up with your SQL server. 
+
+
+File "/Users/ektaawasthi/Desktop/Dojo/Python/Week2/Day3/friends_sql/mysqlconnection.py", line 7
+    "config = {
+              ^
+Answer: The config doesnt need Quatations to run the function.
+
+
+
+
