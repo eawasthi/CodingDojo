@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Hello World</h1>
+{% for i in blogs %}
+	<h5>{{ i.title }}</h5>
+	<p>{{ i.blog }}</p>
+
+
+
+
+
+<form action="/comments/{{blog.id}}" method="post">
+   {% csrf_token %}
+   <textarea name="comment" rows="8" cols="80"></textarea>
+   <input type="submit" value="Enter Comment on This Blog">
+</form>
+{% endfor %}
+
+
+<form action="/blogs" method="post">
+ 	{% csrf_token %}
+	<label for="">Title</label>
+	<input type="text" name="title">
+	<textarea name="blog"></textarea>
+	<input type="submit" value="Enter Blog ">
+</form>
+</body>
+</html> 

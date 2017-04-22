@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title>Ninja's</title>
+</head>
+<body>
+	{% if ekta > 1 and ekta < 11 %}
+		<img src="{% static 'first_app/images/leonardo.jpg' %}">
+	{% elif ekta > 10 and ekta < 21 %}
+		<img src="{% static 'first_app/images/michelangelo.jpg' %}">
+	{% elif ekta > 20 and ekta < 31 %}
+		<img src="{% static 'first_app/images/raphael.jpg' %}">
+	{% elif ekta > 30 and ekta < 41 %}
+		<img src="{% static 'first_app/images/donatello.jpg' %}">
+	{% elif ekta > 40 and ekta < 51 %}
+		<img src="{% static 'first_app/images/tmnt.png' %}">
+	{% else %}
+		<h1>Dont you know the question says to put number between 1 to 50???</h1>
+	{% endif %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <h1>The username you entered {{ username }} is valid.Thank You!</h1>
+ <h4>Usernames entered:</h4>
+ <style>
+ h4{
+ 	text-decoration: underline;
+ }
+ </style>
+ 	{% for user in all_users%}
+		<p>{{ user.username }} {{user.created_at}} </p>
+	{% endfor %}
+ </body>
+</html>
