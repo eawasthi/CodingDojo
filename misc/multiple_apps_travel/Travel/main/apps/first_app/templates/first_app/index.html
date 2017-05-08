@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Welcome!</h1>
+<form action='/register' method='Post' class="register">
+	{% csrf_token %}
+	<fieldset>
+		<legend><h6>Register:</h6></legend>
+		Name:<input type="text" name="name"><br><br>
+		Username:<input type="text" name="username"><br><br>
+		Password:<input type="Password" name="password"><br><br>
+		Confirm PW:<input type="password" name="confirmpass"><br><br>
+		<input type="submit" name="register" value="Register"><br><br>
+	</fieldset>
+</form>
+
+	<style>
+		.register {
+			display: inline-block;	
+		}
+	</style>
+	<style>
+		.login {
+			display: inline-block;
+			vertical-align:top;
+		}
+	</style>
+<form action='/login' method='Post' class="login">
+	{% csrf_token %}
+	<fieldset>
+		<legend><h6>Login:</h6></legend>
+		Username:<input type="text" name="username"><br><br>
+		Password:<input type="Password" name="password"><br><br>
+		<input type="submit" name="login" value="Log In"><br><br>
+	</fieldset>
+</form>
+	{% for message in messages %}
+			<p>{{ message }}</p>
+		{% endfor %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title></title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+<div class="wrapper">
+<a href="/dashboard" class="btn btn-success btn-md">Home</a>
+<a href="/logout" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+<h1>Create a New Wish List Item</h1>
+<form action="/addwishlist" method="post">
+	{% csrf_token %}
+	Item/Product<input type="text" name="item">
+	<input class="btn1 btn-success btn-sm" type="submit" name="submit" value="Add"><br><br>
+</form>
+
+{% for message in messages %}
+	<p>{{ message }}</p>
+{% endfor %}
+</div>
+</body>
+</html>

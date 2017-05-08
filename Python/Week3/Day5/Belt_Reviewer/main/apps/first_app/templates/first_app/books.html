@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Hello, {{ vip }} </h1>
+<a href="/books/add">Add Book and Reviews</a>
+<a href="/logout">Logout</a>
+<h1>Recent Book Reviews:</h1>
+{% for i in bookList %}
+	{{ i.title }}
+	{{ i.rating }}
+	{{ i.review }}
+{% endfor %}
+<h1>Other Books with Reviews:</h1>
+<textarea name="bookswithreviews" rows="10" cols="50"></textarea>
+<a href="/cleardata">Clear</a>
+</body>
+</html>

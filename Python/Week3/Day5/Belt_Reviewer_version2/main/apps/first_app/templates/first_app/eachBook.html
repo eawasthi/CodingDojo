@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>{{currentBook}}</h1>
+<h6>Author: {{ currentAuthor}} </h6>
+<div>
+<h2>Reviews:</h2><br>
+	{% for i in allBooks %}
+		{% if i.review|length > 2  %}
+			Rating:{{ i.rating }}<br><br>
+			<a href="/iUser/{{i.fUsers.id}}"> {{i.fUsers.firstname}} </a> {{i.review}}<br><br>
+			
+			Posted: {{i.created_at}}<br><br>
+			{% if i.fUsers.id == current_user_id %}
+				<a href="/delete/{{i.id}}">Delete this Review</a>
+			{% endif%}
+		{% endif%}
+	{% endfor %}
+</div>
+</body>
+</html>

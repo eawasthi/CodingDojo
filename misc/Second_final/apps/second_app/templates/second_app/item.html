@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title></title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+<div class="wrapper2">
+<a href="/dashboard" class="btn btn-success btn-md">Home</a>
+<a href="/logout" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+<h1>{{items.item}}</h1>
+<h4>Users who added this product/item under their wish list:</h4>
+{{items.fusers.name}}<br>
+
+{% for i in items.joiningwish.all %}
+	{{i.name}}<br>
+{% endfor %} 
+</div>
+</body>
+</html>

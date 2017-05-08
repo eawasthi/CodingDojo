@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style>
+		.logout {
+			margin-left: 1100px;
+		}
+	</style>
+	<h1 class="logout"><a href="/logout">Logout</a></h1>
+	<p> Hello, {{ name }}</p>
+	<p>Your Trip Schedules</p>
+<table>
+	<tr>
+		<th>Destination</th>
+		<th>Travel Start Date</th>
+		<th>Travel End Date</th>
+		<th>Plan</th>
+	</tr>
+	 {% for i in travelplan_me %}
+	 	{% if today <= i.tsd %}
+			<tr>	
+			<td><a href="/destination/{{i.id}}">{{i.destination}}</a></td>	
+				<td>{{ i.tsd}}</td>
+				<td>{{ i.ted}}</td>	
+				<td>{{ i.description}}</td>	
+			</tr>
+		{% endif %}
+{% endfor %}
+</table>
+<h1>Other User's travel Plans:</h1>
+<table>
+	<tr>
+		<th>Name</th><br>
+		<th>Destination</th>
+		<th>Travel Start Date</th>
+		<th>Travel End Date</th>
+	</tr>
+	 {% for i in travelplan_other %}
+	 	{% if today <= i.tsd  %}
+			<tr>
+				<td>{{i.fusers.name}}</td>
+				<td><a href="/destination/{{i.id}}">{{i.destination}}</a></td>	
+				<td>{{ i.tsd}}</td>
+				<td>{{ i.ted}}</td>
+				<td><a href="/joiningtable/{{i.id}}">Join</a></td>
+			</tr>
+		{% endif %}
+	{% endfor %}
+</table>
+</form>
+
+	<form action="travels/add" method="post">
+		{% csrf_token %}
+		<input type="submit" name="submit" value="Add Travel Plan"><br><br>
+</form>
+	{% for message in messages %}
+			<p>{{ message }}</p>
+		{% endfor %}
+</body>
+</html>

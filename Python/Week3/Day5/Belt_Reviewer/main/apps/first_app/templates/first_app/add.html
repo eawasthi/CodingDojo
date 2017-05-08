@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a href="/books">Home</a>
+<a href="/logout">Logout</a>
+<h1>Add a New Book Titile and a Review:</h1>
+<form action="/books/all" method="post">
+	{% csrf_token %}
+	Book Title:<input type="text" name="title">
+	<h6>Author:</h6>
+	<p>Choose from the list:</p>
+	<select>
+	<option></option>
+	{% for i in authorsList %}
+		 <option> {{ i.authorName }} </option>
+	{% endfor %}
+	</select><br>Or add a new author:<input type="text" name="addnewauthor"><br>
+	Review<input type="text" name="review">
+	<h1>Rating:</h1>
+		<select name="rating">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+	<h6>Stars</h6>
+	<input type="submit" name="addbook" value="Add Book and Review">
+</form>
+</body>
+</html>

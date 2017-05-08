@@ -1,0 +1,26 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrapper2{
+	width: 1250px;
+	height: 900px;
+	background-color:lightblue;
+	margin: 5px;
+	padding: 5px;
+}
+
+.btn{
+	margin-left: 1170px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+.name{
+	font-style:italic;
+}
+.welcome{
+	color:orange;
+}

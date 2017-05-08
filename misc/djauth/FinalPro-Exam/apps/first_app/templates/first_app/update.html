@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1><a href="/logout">Logout</a></h1>
+	<h1><a href="/appoitments">Dashboard</a></h1>
+
+	<form action="/update/{{updateq.id}}" method="post">
+		{% csrf_token %}
+		Tasks:<input type="text" name="tasks" value="{{updateq.tasks}}"><br><br>
+		Status:<select name="status"><br><br>
+		<option>{{updateq.status}}</option>
+		<option>Done</option>
+		<option>Pending</option>
+		<option>Missed</option><br>
+	</select><br><br>
+		Date:<input type="date" name="date" value={{updateq.date | date:"Y-m-d"}}><br><br>
+		Time:<input type="time" name="time" value={{updateq.time | time:""}}><br><br>
+		<input type="submit" name="update" value="Update"><br><br>
+	</form>
+	<p>{{updateq.time}}</p>
+	<p>{{updateq.date}}</p>
+	<p>{{updateq.tasks}}</p>
+		{% for message in messages %}
+			<p>{{ message }}</p>
+		{% endfor %}
+
+</body>
+</html>

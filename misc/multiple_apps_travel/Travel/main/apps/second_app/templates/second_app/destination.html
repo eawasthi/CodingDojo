@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a href="/travels">Home</a><br><br>
+<a href="/logout">Logout</a><br><br>
+
+	<h1>{{otheruser1.destination}}</h1><br>
+	<p>Planned By:{{otheruser1.fusers.name}}</p><br>
+	<p>Description:{{otheruser1.description}}</p><br>
+	<p>Travel Date From:{{otheruser1.tsd}}</p><br>
+	<p>Travel Date to:{{otheruser1.ted}}</p><br>
+
+
+<p>Other users'joining the trip:</p>
+{% for i in otheruser1.joiningTable.all %}
+	<p>{{i.name}}</p><br>
+{% endfor %}
+
+</body>
+</html>

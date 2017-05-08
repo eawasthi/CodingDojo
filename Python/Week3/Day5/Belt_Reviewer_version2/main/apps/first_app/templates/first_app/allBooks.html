@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Welcome, {{ firstname }}</p>
+<a href="/goToEachBook">Add Book and Reviews</a><br>
+<a href="/logout">Logout</a>
+<h3>Recent Book reviews</h3>
+{% for i in reviews %}
+	<a href="/addBookstoDB"><h3>{{i.title}}</h3></a>
+	{{i.rating}}<br>
+	<a href="/users">{{i.fUsers.firstname}}</a> {{i.review}}<br><br>
+	{{i.created_at}}
+
+{% endfor %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('{% static "images/image.jpg"%}')";>
+<div class="wrapper">
+<marquee><h1>Welcome to this page!</h1></marquee>
+<form action='/register' method='Post' class="register">
+	{% csrf_token %}
+	<fieldset>
+		<legend><h3>Register:</h3></legend>
+		Name:<input type="text" name="name"><br><br>
+		Username:<input type="text" name="username"><br><br>
+		Password:<input type="Password" name="password"><br><br>
+		Confirm PW:<input type="password" name="confirmpass"><br><br>
+		Date Hired::<input type="Date" name="datehired"><br><br>
+		<input type="submit" class="btn btn-success btn-md" name="register" value="Register"><br><br>
+	</fieldset>
+</form>
+
+	<style>
+		.register {
+			display: inline-block;	
+		}
+	</style>
+	<style>
+		.login {
+			display: inline-block;
+			vertical-align:top;
+		}
+	</style>
+<form action='/login' method='Post' class="login">
+	{% csrf_token %}
+	<fieldset>
+		<legend><h3>Login:</h3></legend>
+		Username:<input type="text" name="username"><br><br>
+		Password:<input type="Password" name="password"><br><br>
+		<input type="submit" class="btn btn-success btn-md" name="login" value="Log In"><br><br>
+
+		<p><strong>-- OR --</strong></p>
+		<a  class="btn btn-success btn-md" href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
+
+	</fieldset>
+</form>
+	{% for message in messages %}
+		<p>{{ message }}</p>
+	{% endfor %}
+</div>
+</body>
+</html>

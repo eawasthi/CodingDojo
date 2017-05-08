@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style>
+		.logout {
+			margin-left: 1100px;
+		}
+	</style>
+	<h1 class="logout"><a href="/logout">Logout</a></h1>
+	<p> Hello, {{ firstname }}</p>
+	<p>Here are your appoitments for today, {{ date }} </p>
+
+<table>
+	<tr>
+		<th>Tasks</th>
+		<th>Time</th>
+		<th>Status</th>
+		<th>Action</th>
+	</tr>
+	 {% for i in appoitments %}
+	 	{% if i.date == date and i.status != "Done"%}
+	<tr>	
+		<td>{{ i.tasks }}</td>
+		<td>{{ i.time}}</td>
+		<td>{{ i.status}}</td>
+		<td><a href="/edit/{{i.id}}">Edit</a>  <a href="/delete/{{i.id}}">Delete</a></td>			
+	</tr>
+		{% endif %}
+{% endfor %}
+</table>
+<h1>Your Other Appoitments:</h1>
+<table>
+	<tr>
+		<th>Tasks</th><br>
+		<th>Date</th>
+		<th>Time</th>
+	</tr>
+	 {% for i in appoitments %}
+	 	{% if i.date > date %}
+	<tr>
+		<td>{{ i.tasks }}</td>
+		<td>{{ i.date}}</td>
+		<td>{{ i.time}}</td>
+	</tr>
+		{%endif%}
+{% endfor %}
+</table>
+</form>
+	<h6>Add Appoitment</h6>
+	<form action="/create" method="post">
+		{% csrf_token %}
+		Date:<input type="date" name="date1"><br><br>
+		Time:<input type="time" name="time1"><br><br>
+		Tasks:<input type="text" name="tasks"><br><br>
+		<input type="submit" name="submit" value="Add"><br><br>
+</form>
+
+	{% for message in messages %}
+			<p>{{ message }}</p>
+		{% endfor %}
+
+</body>
+</html>
