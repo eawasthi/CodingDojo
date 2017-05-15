@@ -1,0 +1,28 @@
+MongoDB Commands used in "Intro to MongoDB" assignment:
+1) db.createCollection("students")
+2) db.students.insert({name: "Kevin", home_state: "Washington", lucky_number: 12, birthday: {month: 02, day: 24, year: 1988}})
+ db.students.insert({name: "Jon", home_state: "Texas", lucky_number: 22, birthday: {month: 06, day: 22, year: 1984}})
+> db.students.insert({name: "Ekta", home_state: "Washington", lucky_number: 7, birthday: {month: 07, day: 08, year: 1991}})
+> db.students.insert({name: "Annie", home_state: "Washington", lucky_number: 1, birthday: {month: 11, day: 27, year: 1980}})
+db.students.insert({name: "Adam", home_state: "Nevada", lucky_number: 7, birthday: {month: 03, day: 01, year: 1978}})
+3) db.students.find()
+4) db.students.find({home_state: "Washington"})
+5) db.students.find({lucky_number: { $gt: 3}}).pretty()
+   db.students.find({lucky_number: {$lt: 11}}).pretty()
+   db.students.find({lucky_number: {$gt:0}, lucky_number: {$lt: 10} })
+    
+6) db.students.updateMany({}, {$set: {interests: ['coding', 'brunch', 'MongoDB']}})
+7) db.students.update({name: "Kevin"}, {$addToSet: { interests: 'algorithms'}})
+8) db.students.update({name: "Kevin"}, {$addToSet: { interests: 'taxes'}})
+   db.students.update({name: "Kevin"},{$pull: {interests: "taxes"}})
+9) db.students.remove({ home_state: "California" })
+(to remove students from Washington and California, use this:
+ db.students.remove({$or: [{home_state:"California"}, {home_state:"Washington"}]}) 
+10) db.students.remove({name:"Jon"})
+11) db.students.remove({lucky_number: {$gt:5}}, {justOne:true})
+12) db.students.updateMany({}, {$set: {number_of_belts: 0 }})
+//  Increment this field by 1 for all students in Washington (Seattle Dojo).Rename the 'number_of_belts' field to 'belts_earned'
+13) db.students.update({home_state: "Washington"},{$inc: {number_of_belts: 1}},{multi:true})
+14) db.students.update({}, {$rename: {"number_of_belts":"belts_earned"}})
+15) db.students.update({}, {$unset:{lucky_number:""}},{multi:true})
+16) db.students.update({}, {$currentDate:{updated_on:true}},{multi:true})

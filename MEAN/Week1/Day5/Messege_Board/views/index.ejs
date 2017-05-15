@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Message Board</title>
+    <style>
+      .name1{
+        margin-left: 50px;
+      }
+      .name2{
+        margin-left: 100px;
+      }
+       .name3{
+        margin-left: 150px;
+      }
+        .name4{
+        margin-left: 150px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Dojo Message Board</h1>
+    <hr>
+    <form class="" action="/" method="post">
+    <table>
+      <tr>
+        <td>Name: </td>
+        <td><input type="text" name="name" value=""></td>
+      </tr>
+      <tr>
+        <td>Message: </td>
+        <td><textarea name="text" rows="8" cols="80"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" name="submit" value="Post Message"></td>
+      </tr>
+    </table>
+    </form>
+
+  <% for (i in mongoose) { %>
+    <p class="name1">Name:<%= mongoose[i].name %></p>
+    <p class="name1">Message:<%= mongoose[i].text %></p>
+    <p class="name2"><% for (j in mongoose[i].comments) { %>
+    <p class="name3"><%= mongoose[i].comments[j].name1  %></p>
+    <p class="name3"><%= mongoose[i].comments[j].text1  %></p>
+  <% } %>
+  <br><br>
+      <form action="/posts/<%= mongoose[i].id%>" method="post">
+         <table class="name4">
+          <tr>
+            <td>Name: </td>
+            <td><input type="text" name="name1" value=""></td>
+          </tr>
+          <tr>
+            <td> Post a Comment: </td>
+            <td><textarea name="text1" rows="2" cols="20"></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" name="submit" value="Post Comment"></td>
+          </tr>
+          </table>
+         </form></p>
+  <% } %>
+  </body>
+</html>

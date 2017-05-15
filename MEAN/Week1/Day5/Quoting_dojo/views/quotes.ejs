@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Here are the awesome quotes!</h1>
+<% for(var i=0; i< all_quotes.length; i++) {%>
+		<p>"<%= all_quotes[i].quotes %>"</p>
+   		<p><%= all_quotes[i].name %></p>
+   		<p><%= all_quotes[i].createdAt %></p>
+   	<hr>
+<% } %>
+</body>
+</html>

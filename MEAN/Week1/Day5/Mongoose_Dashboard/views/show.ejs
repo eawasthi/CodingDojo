@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Edit</title>
+</head>
+<body>
+<h1>Show Page!</h1>
+	<p>Name: <%= mongoose.name %></p>
+	<p>Color: <%= mongoose.color %></p>
+	<p>Weight: <%= mongoose.weight %></p>
+	<a href="/">Home</a>
+	<a href="/<%= mongoose._id %>/edit">Edit</a>
+</body>
+</html>
