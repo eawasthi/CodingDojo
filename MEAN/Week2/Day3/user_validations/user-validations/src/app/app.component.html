@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form (submit)="onSubmit(formData)" #formData="ngForm">
+  First Name:<input type="text" name="first_name"
+    [(ngModel)]="user.first_name"
+    #first="ngModel"
+    minlength="5"
+    maxlength="15"
+    required />
+  <h5>{{ first.errors | json }}</h5>
+
+  Last Name:<input type="text" name="last_name"
+    [(ngModel)]="user.last_name"
+    #last="ngModel"
+    minlength="5"
+    maxlength="15"
+    required />
+  <h5>{{ last.errors | json }}</h5>
+
+  Email:<input type="text" name="email"
+    [(ngModel)]="user.email"
+    #email="ngModel"
+    minlength="5"
+    maxlength="15"
+    required />
+  <h5>{{ email.errors | json }}</h5>
+
+  Password:<input type="password" name="password"
+    [(ngModel)]="user.first_name"
+    #pass="ngModel"
+    minlength="5"
+    maxlength="15"
+    required />
+  <h5>{{ pass.errors | json }}</h5>
+  
+  <input
+    type="submit"
+    [disabled]="!formData.form.valid"
+    />
+</form>
+  </body>
+</html>
+
+

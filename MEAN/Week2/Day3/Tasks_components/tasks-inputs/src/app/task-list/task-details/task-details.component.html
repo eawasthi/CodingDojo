@@ -1,0 +1,7 @@
+<div [ngClass]="{notdone: !task.completed, done: task.completed}">
+<h5>Task Detail</h5>
+{{task | json}}
+<button (click)="update()">Click</button>
+</div>
+
+

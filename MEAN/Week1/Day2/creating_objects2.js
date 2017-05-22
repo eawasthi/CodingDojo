@@ -2,7 +2,6 @@ function VehicleConstructor(name, numberOfWheels, numberOfPass,speed){
 	var distance_travelled=0;
 	var updateDistanceTravled= function(){
 		distance_travelled+=this.speed;
-		console.log(distance_travelled);
 	}
 	this.name=name;
 	this.numberOfWheels=numberOfWheels;
@@ -41,8 +40,16 @@ bus.addpassengers();
 
 
 
-console.log(bike);
-console.log(sedan);
+
+
+
+
+
+// updateDistanceTravled()
+// console.log(distance_travelled);
+// console.log(bus);
+// console.log(bike);
+// console.log(sedan);
 console.log(bus);
 bus.addpassengers();
 console.log(bus);

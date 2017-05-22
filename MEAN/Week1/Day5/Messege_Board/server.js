@@ -20,7 +20,7 @@ var connection = mongoose.connect("mongodb://localhost/message_db")
 var Schema = mongoose.Schema;
 // Create Mongoose schema and attach it as a model to our database
 var PostSchema = new mongoose.Schema({
-	name: {type: String, required: true },
+	name: {type: String, required: true},
 	text: {type: String, required: true },
 	comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}]
 });

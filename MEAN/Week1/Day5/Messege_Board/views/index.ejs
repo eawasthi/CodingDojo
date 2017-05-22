@@ -39,12 +39,12 @@
     </table>
     </form>
 
-  <% for (i in mongoose) { %>
+  <% for (var i=0; i<mongoose.length; i++) { %>
     <p class="name1">Name:<%= mongoose[i].name %></p>
     <p class="name1">Message:<%= mongoose[i].text %></p>
-    <p class="name2"><% for (j in mongoose[i].comments) { %>
-    <p class="name3"><%= mongoose[i].comments[j].name1  %></p>
-    <p class="name3"><%= mongoose[i].comments[j].text1  %></p>
+    <p class="name2"><% for (var j=0; j<mongoose[i].comments.length; j++) { %>
+    <p class="name3">Name:<%= mongoose[i].comments[j].name1  %></p>
+    <p class="name3">Comment:<%= mongoose[i].comments[j].text1  %></p>
   <% } %>
   <br><br>
       <form action="/posts/<%= mongoose[i].id%>" method="post">

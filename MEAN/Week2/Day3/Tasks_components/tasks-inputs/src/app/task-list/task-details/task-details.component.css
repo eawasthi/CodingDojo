@@ -1,0 +1,8 @@
+.notdone{
+	border: 3px solid red;
+	margin: 5px;
+}
+.done{
+	border:3px solid green;
+	margin: 5px;
+}

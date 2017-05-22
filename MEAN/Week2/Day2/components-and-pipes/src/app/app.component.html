@@ -1,0 +1,30 @@
+<div class="test">
+<h1>
+  {{title}}
+</h1>
+<h3 class="name">Hello, {{name | uppercase}}.</h3>
+<h3>Currency Formats</h3>
+<p>USD (no format): {{value | currency: 'USD': true}}</p>
+<p>EUR: : {{value | currency: 'EUR': true}}</p>
+<p>AUS: : {{value | currency: 'AUS': true}}</p>
+<p>CYN: : {{value | currency: 'CYN': true}}</p>
+
+
+
+<hr>
+<h1>Date Formats</h1>
+<p>Date: {{date | date }}</p>
+<p>Full Date: {{date | date: 'fullDate': true }}</p>
+<p>Long Date: {{date | date: 'longDate' }}</p>
+<p>Medium Date: {{date | date: 'mediumDate' }}</p>
+<p>Short Date: {{date | date: 'shortDate' }}</p>
+<p>Custom Date: {{date | date: 'd-M-y' }}</p>
+<hr>
+
+
+<h1>Time Formats</h1>
+<p>Medium Time: {{date | date: 'mediumTime' }}</p>
+<p>Short Time: {{date | date: 'shortTime' }}</p>
+<p>Custom Time: {{date | date: 'd-M-y h:m:s z' }}</p>
+
+</div>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Hello Index!</h1>
+	<a href="/new">Create new Mongoose!</a><br>	
+	<% for (i in mongoose) { %>
+		Name: <a href="/<%= mongoose[i]._id %>"> <%= mongoose[i].name %></a>
+		<a href="/<%= mongoose[i]._id %>/edit/"> Edit Mongoose</a><br>
+		<form action="/<%= mongoose[i]._id %>/delete/" method="get">
+			<input type="submit" value="Delete">
+		</form>
+	<% } %>
+</body>
+</html>

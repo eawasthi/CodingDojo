@@ -1,0 +1,15 @@
+<h1>
+  {{title}}
+</h1>
+<hr>
+<h1>Links</h1>
+<a [routerLink]="['/home']">Home</a>
+<a [routerLink]="['/notes']">Notes</a>
+<a [routerLink]="['/tasks']">Tasks</a>
+<h1>Click events</h1>
+<button [routerLink]="['/home']">Home</button>
+<button [routerLink]="['/notes']">Notes</button>
+<button [routerLink]="['/tasks']">Tasks</button>
+<hr>
+<router-outlet></router-outlet>
+

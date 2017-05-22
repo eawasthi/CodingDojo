@@ -1,0 +1,23 @@
+<form (submit) = "create_note()">
+	<p>Note:<input type="text" [(ngModel)]=new_note.content name="note">
+	<input type="submit" name="submit">
+</form>
+{{new_note.content}}
+<h1>List of all notes</h1>
+<!-- {{all_notes | json }} -->
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Note</th>
+		<th>Date Created</th>
+		<th>Date Updated</th>
+
+	</tr>
+	<tr *ngFor='let note of all_notes'>
+		<td>{{ note.id }}</td>
+		<td>{{ note.content }}</td>
+		<td>{{ note.created_at | date: 'shortDate'}}</td>
+		<td>{{ note.updated_at | date: 'shortDate' }}</td>
+	</tr>
+</table>
+<app-notes-edit></app-notes-edit>
