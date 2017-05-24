@@ -1,17 +1,25 @@
 var mongoose = require("mongoose")
 var User = mongoose.model("User")
-
-
-
 module.exports = {
-    register_user: function(req,res){
-        var newUser = new User()
-        newUser.FirstName = req.body.FirstName
-        newUser.LastName = req.body.LastName
-        newUser.Email = req.body.Email
-        newUser.Password = req.body.Password
-        newUser.Birthday = req.body.Birthday
+       get_users: function(req,res){
+        User.find({},function(err,data){
+            if(err){
+                console.log(err)
+                res.json(err)
+            }else{
+                res.json(data)
+            }
+        })
+    },
+
+    create_user: function(req,res){
+        console.log("entering createuser", req.body)
+        var newUser = new User(req.body)
         newUser.save(function(err){
+            if(err){
+                    console.log(err)
+                    res.json(err)}
+            else{
                 User.find({},function(err,data){
                 if(err){
                     console.log(err)
@@ -20,13 +28,7 @@ module.exports = {
                     res.json(data)
                 }
             })
-        })
-    },
-
-    login_user: function(req,res){
-        User.findOne({Email: req.body.Email, function(err, data){
-          if(err){console.log(err)}
-          else {}  
+            }
         })
     },
     

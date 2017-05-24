@@ -1,0 +1,36 @@
+<p>
+  user-crud works!
+</p>
+{{allusers | json}}
+
+<table>
+  <tr>
+    <th>User name</th>
+    <th>Email</th>
+    <th>Birthday</th>
+    <th>inspect</th>
+    <th>Update</th>
+    <th>Delete</th>
+
+  </tr>
+
+  <tr *ngFor= "let user of allusers">
+    <td>{{user.name.first}} {{user.name.last}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.birthday | date: 'shortDate'}}</td>
+    <td><button (click)="inspect(user._id)">Inspect</button></td>
+    <td><button (click)="inspect(user._id)">Update</button></td>
+    <td><button (click)="inspect(user._id)">Delete</button></td>
+  </tr>
+</table>
+
+{{selectedUser | json}}
+
+<form *ngIf="selectedUser">
+
+    <p>First Name: <input [(ngModel)]="selectedUser.name.first" type=text name="namefirst" value="selectedUser.name.first"></p>
+    <p>Last Name: <input [(ngModel)]="selectedUser.name.last" type=text name="namelast" value="selectedUser.name.last"></p>
+    <p>Email: <input [(ngModel)]="selectedUser.email" type=text name="email" value="selectedUser.email"></p>
+    <p>Birthday: <input [(ngModel)]="selectedUser.birthday" type=date name="birthday1" value="selectedUser.birthday"></p>
+    <p>Password: <input [(ngModel)]="selectedUser.password" type=text name="password1" value="selectedUser.password"></p>
+</form>

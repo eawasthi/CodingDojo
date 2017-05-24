@@ -2,10 +2,9 @@ var controller = require("./../controllers/controller.js")
 
 
 module.exports = function(app){
-    app.get("/register",controller.register_user)
-    app.get("/login",controller.login_user)
-    // app.post("/create",controller.create_user)
-    // app.post("/edit/:id",controller.edit_user)
-    // app.get("/delete/:id",controller.delete_user)
-    // app.get("/show/:id",controller.show_user)
+    app.get("/get_users",controller.get_users)
+    app.post("/create",controller.create_user)
+    app.post("/edit",controller.edit_user)
+    app.get("/delete/:id",controller.delete_user)
+    app.get("/findOne/:id",controller.show_user)
 }

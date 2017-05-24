@@ -1,0 +1,21 @@
+<p>
+  users-login works!
+</p>
+<h1>Registration</h1>
+<form>
+	First Name:<input [(ngModel)]="new_user.name.first" type="text" name="first"><br>
+	Last Name:<input [(ngModel)]="new_user.name.last" type="text" name="last"><br>
+	Email:<input [(ngModel)]="new_user.email" type="text" name="email"><br>
+	Birthday:<input [(ngModel)]="new_user.birthday"  type="Date" name="birth"><br>
+	Password:<input [(ngModel)]="new_user.password" type="password" name="pass"><br>
+	<button (click) = "registerUser()">Register</button>
+</form>
+
+<h1>Login</h1>
+<form>
+	Email:<input type="text" name="email"><br>
+	Password:<input type="text" name="pass"><br>
+	<button (click) = 'console.log("Trying to login")'>Login</button>
+</form>
+<h2>User object is</h2>
+{{new_user | json }}
