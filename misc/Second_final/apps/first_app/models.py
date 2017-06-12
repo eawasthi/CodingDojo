@@ -6,8 +6,8 @@ import bcrypt
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 
 class UserManager(models.Manager):
-	def register(self, postData, date1):
-		print date1
+	def register(self, postData):
+		# print date1
 		registration_errors=[]
 
 		if not len(postData['name']):
@@ -43,11 +43,11 @@ class UserManager(models.Manager):
       			hashed_pw = bcrypt.hashpw(postData['password'].encode(), bcrypt.gensalt())
 
 
-		if len(postData['datehired'])<8:
-			registration_errors.append('Date cannot be empty.')
+		# if len(postData['datehired'])<8:
+		# 	registration_errors.append('Date cannot be empty.')
 
-		if (postData['datehired']) > str(date1):
-			registration_errors.append('Date cannot be in future.')
+		# if (postData['datehired']) > str(date1):
+		# 	registration_errors.append('Date cannot be in future.')
 
 
 		response_to_views={}
@@ -55,7 +55,7 @@ class UserManager(models.Manager):
 			response_to_views['status']=False
 			response_to_views['errors']=registration_errors
 		else:
-			user=self.create(name= postData['name'], username= postData['username'], password=hashed_pw, datehired= postData['datehired'])
+			user=self.create(name= postData['name'], username= postData['username'], password=hashed_pw)
 			response_to_views['status']=True
 			response_to_views['user']=user		
 		return response_to_views	

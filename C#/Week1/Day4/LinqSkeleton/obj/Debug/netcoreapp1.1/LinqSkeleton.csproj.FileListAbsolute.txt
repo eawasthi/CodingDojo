@@ -1,0 +1,8 @@
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/LinqSkeleton/bin/Debug/netcoreapp1.1/LinqSkeleton.deps.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/LinqSkeleton/bin/Debug/netcoreapp1.1/LinqSkeleton.runtimeconfig.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/LinqSkeleton/bin/Debug/netcoreapp1.1/LinqSkeleton.runtimeconfig.dev.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/LinqSkeleton/bin/Debug/netcoreapp1.1/LinqSkeleton.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/LinqSkeleton/bin/Debug/netcoreapp1.1/LinqSkeleton.pdb
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/LinqSkeleton/obj/Debug/netcoreapp1.1/LinqSkeleton.AssemblyInfo.cs
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/LinqSkeleton/obj/Debug/netcoreapp1.1/LinqSkeleton.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/LinqSkeleton/obj/Debug/netcoreapp1.1/LinqSkeleton.pdb

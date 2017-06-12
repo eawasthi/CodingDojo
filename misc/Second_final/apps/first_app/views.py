@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect
 from .models import Users
 from django.contrib import messages
-from datetime import datetime
+# from datetime import datetime
 
 def register(request):
-	date1=datetime.now().date()
+	# date1=datetime.now().date()
 	if request.method == 'POST':
-		response_from_models = Users.run.register(request.POST, date1)
+		response_from_models = Users.run.register(request.POST)
 		if not response_from_models['status']:
 			for model_error in response_from_models['errors']:
 				messages.error(request, model_error)

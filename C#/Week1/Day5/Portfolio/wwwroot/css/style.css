@@ -1,0 +1,17 @@
+.title{
+    color: purple;
+}
+.about{
+    font-style: italic;
+    color: red;
+}
+
+.desc{
+    font-style: italic;
+    color: red;
+    font-size: 19px;
+}
+.contact{
+    color: lightblue;
+}
+

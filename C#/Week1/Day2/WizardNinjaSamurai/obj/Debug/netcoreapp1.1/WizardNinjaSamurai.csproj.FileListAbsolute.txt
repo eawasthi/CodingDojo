@@ -1,0 +1,8 @@
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/WizardNinjaSamurai/bin/Debug/netcoreapp1.1/WizardNinjaSamurai.deps.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/WizardNinjaSamurai/bin/Debug/netcoreapp1.1/WizardNinjaSamurai.runtimeconfig.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/WizardNinjaSamurai/bin/Debug/netcoreapp1.1/WizardNinjaSamurai.runtimeconfig.dev.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/WizardNinjaSamurai/bin/Debug/netcoreapp1.1/WizardNinjaSamurai.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/WizardNinjaSamurai/bin/Debug/netcoreapp1.1/WizardNinjaSamurai.pdb
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/WizardNinjaSamurai/obj/Debug/netcoreapp1.1/WizardNinjaSamurai.AssemblyInfo.cs
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/WizardNinjaSamurai/obj/Debug/netcoreapp1.1/WizardNinjaSamurai.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/WizardNinjaSamurai/obj/Debug/netcoreapp1.1/WizardNinjaSamurai.pdb

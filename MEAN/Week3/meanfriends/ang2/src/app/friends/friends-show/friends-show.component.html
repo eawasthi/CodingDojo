@@ -1,0 +1,8 @@
+<ul>
+    <li>{{_friendsService.showUser.FirstName}}</li>
+    <li>{{_friendsService.showUser.LastName}}</li>
+    <li>{{_friendsService.showUser.Birthday | date: 'shortDate' }}</li>
+    <li>{{_friendsService.showUser.createdAt | date:'shortDate'}}</li>
+</ul>
+
+<button (click) = "_friendsService.home()">Home</button>

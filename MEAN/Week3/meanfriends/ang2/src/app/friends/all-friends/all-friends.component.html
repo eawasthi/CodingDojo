@@ -1,0 +1,21 @@
+
+<p>Search: <input type="text" name="filter" [(ngModel)]="search_string"></p>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Show</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor = "let user of _friendsService.USERS | name_filter:search_string" >
+      <td>{{user.FirstName}} {{user.LastName}}</td>
+      <td><button (click) = "_friendsService.showPage(user._id)"2>Show</button></td>
+      <td><button (click) = "_friendsService.editPage(user._id)">Edit</button></td>
+      <td><button (click) = "_friendsService.deleteUser(user._id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click) = "_friendsService.newPage()">New Friend</button>

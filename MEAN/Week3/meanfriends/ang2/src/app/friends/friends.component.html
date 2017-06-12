@@ -1,0 +1,18 @@
+<div *ngIf ="_friendsService.mainpage">
+  <app-all-friends></app-all-friends>
+</div>
+
+<div *ngIf ="_friendsService.newpage && !_friendsService.mainpage">
+  <app-friends-new></app-friends-new>
+</div>
+
+<div *ngIf ="_friendsService.editpage && !_friendsService.mainpage">
+  <app-friends-edit></app-friends-edit>
+</div>
+
+<div *ngIf ="_friendsService.showpage && !_friendsService.mainpage">
+  <app-friends-show></app-friends-show>
+</div>
+
+
+

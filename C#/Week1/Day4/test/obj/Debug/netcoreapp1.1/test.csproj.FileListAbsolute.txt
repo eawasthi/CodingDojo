@@ -1,0 +1,8 @@
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/test/bin/Debug/netcoreapp1.1/test.deps.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/test/bin/Debug/netcoreapp1.1/test.runtimeconfig.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/test/bin/Debug/netcoreapp1.1/test.runtimeconfig.dev.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/test/bin/Debug/netcoreapp1.1/test.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/test/bin/Debug/netcoreapp1.1/test.pdb
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/test/obj/Debug/netcoreapp1.1/test.AssemblyInfo.cs
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/test/obj/Debug/netcoreapp1.1/test.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day4/test/obj/Debug/netcoreapp1.1/test.pdb

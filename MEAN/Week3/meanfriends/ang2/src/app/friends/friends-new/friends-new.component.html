@@ -1,0 +1,13 @@
+<h1>Create User</h1>
+<form (submit) = "addUser()" >
+  <label for="">First Name</label>
+  <input type="text" [(ngModel)]="newUser.FirstName" name ="Firstname"  #FirstName= "ngModel" required>
+
+  <label for="">Last Name</label>
+  <input type="text" [(ngModel)]="newUser.LastName" name ="Lastname"  #LastName= "ngModel" required>
+
+  <label for="">Birthday</label>
+  <input type="date" [(ngModel)]="newUser.Birthday" name ="Birthday"  #Birthday= "ngModel" required>
+
+  <input type="submit" value = "create">
+</form>

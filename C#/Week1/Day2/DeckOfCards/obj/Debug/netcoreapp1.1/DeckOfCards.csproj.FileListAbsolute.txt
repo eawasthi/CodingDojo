@@ -1,0 +1,8 @@
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/DeckOfCards/bin/Debug/netcoreapp1.1/DeckOfCards.deps.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/DeckOfCards/bin/Debug/netcoreapp1.1/DeckOfCards.runtimeconfig.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/DeckOfCards/bin/Debug/netcoreapp1.1/DeckOfCards.runtimeconfig.dev.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/DeckOfCards/bin/Debug/netcoreapp1.1/DeckOfCards.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/DeckOfCards/bin/Debug/netcoreapp1.1/DeckOfCards.pdb
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/DeckOfCards/obj/Debug/netcoreapp1.1/DeckOfCards.AssemblyInfo.cs
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/DeckOfCards/obj/Debug/netcoreapp1.1/DeckOfCards.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week1/Day2/DeckOfCards/obj/Debug/netcoreapp1.1/DeckOfCards.pdb
