@@ -1,0 +1,8 @@
+/Users/ektaawasthi/Desktop/Dojo/C#/Week2/Day1/Random_Passcode/bin/Debug/netcoreapp1.1/Random_Passcode.deps.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week2/Day1/Random_Passcode/bin/Debug/netcoreapp1.1/Random_Passcode.runtimeconfig.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week2/Day1/Random_Passcode/bin/Debug/netcoreapp1.1/Random_Passcode.runtimeconfig.dev.json
+/Users/ektaawasthi/Desktop/Dojo/C#/Week2/Day1/Random_Passcode/bin/Debug/netcoreapp1.1/Random_Passcode.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week2/Day1/Random_Passcode/bin/Debug/netcoreapp1.1/Random_Passcode.pdb
+/Users/ektaawasthi/Desktop/Dojo/C#/Week2/Day1/Random_Passcode/obj/Debug/netcoreapp1.1/Random_Passcode.AssemblyInfo.cs
+/Users/ektaawasthi/Desktop/Dojo/C#/Week2/Day1/Random_Passcode/obj/Debug/netcoreapp1.1/Random_Passcode.dll
+/Users/ektaawasthi/Desktop/Dojo/C#/Week2/Day1/Random_Passcode/obj/Debug/netcoreapp1.1/Random_Passcode.pdb

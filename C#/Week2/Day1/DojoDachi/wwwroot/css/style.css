@@ -1,0 +1,14 @@
+.first{
+    display: inline-block;
+    margin: 20px;
+}
+
+.third{
+    display: inline;
+    margin: 10px;
+}
+.message{
+    color: red;
+    vertical-align: middle;
+    margin-left: 100px;
+}

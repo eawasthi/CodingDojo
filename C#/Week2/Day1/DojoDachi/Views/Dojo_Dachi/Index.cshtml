@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dojo Dachi</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+<div>
+    <div>
+        <p class="first">Fullness:@ViewBag.Status.fullness</p> 
+        <p class="first">Happiness: @ViewBag.Status.happiness</p> 
+        <p class="first">Meals: @ViewBag.Status.meals</p> 
+        <p class="first">Energy: @ViewBag.Status.energy</p>
+        <p class="message">@ViewBag.Message</p> 
+      
+    </div>
+    <img src="~/images/Letters.png"/>
+    
+    <div>
+        <form action="/feed" method="post">
+            <input  type="hidden" name="Feed" value="Feed">
+            <input class="third" type="submit" value="Feed">
+        </form>
+    </div>
+    <div>
+        <form action="/play" method="post">
+            <input type="hidden" name="Feed" value="Play">
+            <input class="third" type="submit" value="Play">
+        </form>
+    </div>
+    <div>
+        <form action="/work" method="post">
+            <input type="hidden" name="Feed" value="Work">
+            <input class="third" type="submit" value="Work">
+        </form>
+    </div>
+    <div>  
+        <form action="/sleep" method="post">
+            <input type="hidden" name="Feed" value="Sleep">
+            <input class="third" type="submit" value="Sleep">
+        </form>
+    </div>
+
+      @{   
+            if(@ViewBag.status.energy > 30 && @ViewBag.status.fullness >30 && @ViewBag.status.happiness >30)
+            {
+               <a href="/clear">Reset</a>
+            }
+            else if(@ViewBag.status.fullness == 0 || @ViewBag.status.happiness == 0)
+            {
+                <a href="/clear">Reset</a>
+            }
+        }
+
+
+</div>
+</body>
+</html>

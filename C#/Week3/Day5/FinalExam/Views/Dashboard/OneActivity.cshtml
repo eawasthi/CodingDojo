@@ -1,0 +1,48 @@
+<h1>Dojo Activity Center</h1>
+<a href="/dashboard">Home</a>
+<a href="logout">Log off</a>
+
+<h1>@ViewBag.OneActivity.Title</h1>
+<h1>Description:</h1>
+ <p>@ViewBag.OneActivity.Description</p>
+ <p>participants:</p>
+    <ul>
+        @if(@ViewBag.OneActivity.JoinActivity.Count > 0)
+        {
+        foreach( var guest in @ViewBag.OneActivity.JoinActivity)
+        {
+            <li>@guest.User.Firstname @guest.User.Lastname</li>
+        }
+        }
+        else
+        {
+        <p>No one has Joined</p>
+        }
+    </ul>
+
+    @{
+        bool join = false;
+
+            @if(@ViewBag.OneActivity.UserId == @ViewBag.UserID)
+                {
+                <a class="btn btn-warning btn-s" href="/delete/@ViewBag.OneActivity.ActivitiesId">DELETE</a>
+                }
+            else 
+                {
+                    @foreach(var guest in @ViewBag.OneActivity.JoinActivity)
+                        {
+                            @if(@guest.UserId == @ViewBag.UserId)
+                            {
+                                join = true;
+                            }
+                        }
+                    @if(join == true)
+                        {
+                            <a class="btn btn-primary btn-s" href="/LEAVE/@ViewBag.OneActivity.ActivitiesId">LEAVE</a>   
+                        }
+                    else
+                        {
+                        <a class="btn btn-primary btn-s" href="/JOIN/@ViewBag.OneActivity.ActivitiesId">JOIN</a>   
+                        }
+                }
+    }

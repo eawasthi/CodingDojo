@@ -1,0 +1,48 @@
+<h1>Dojo Activity Center</h1>
+<a href="/dashboard">Home</a>
+<a href="logout">Log off</a>
+
+
+<div>
+    @{
+        foreach(var error in @ViewBag.Errors)
+        {
+            //If there are any errors for a field...
+            if(@error.Errors.Count > 0)
+            {
+                // We show the first error for that field
+                <p>@error.Errors[0].ErrorMessage</p>
+            }
+        }
+    }
+</div>
+
+<h1>Create an Activity!</h1>
+<form action="/createactivity" method="post">
+<div class="form-group">
+<label for="Title">Title: </label>
+<input type="text" class="form-control" id="Title" name="Title">
+</div>
+<div class="form-group">
+<label for="Date">Date: </label>
+<input type="date" class="form-control" id="Date" name="Date">
+</div>
+<div class="form-group">
+<label for="Description">Description: </label>
+<input type="text" class="form-control" id="Description" name="Description">
+</div>
+<div class="form-group">
+<label for="Time">Time: </label>
+<input type="time" class="form-control" id="Time" name="Time">
+</div>
+<div class="form-group">
+<label for="Duration">Duration: </label>
+<input type="text" class="form-control" id="Duration" name="Duration">
+<select>
+    <option>Days</option>
+    <option>Hours</option>
+    <option>Mins</option>
+</select>
+</div>
+<input type="submit" value="Create Activity">
+</form>

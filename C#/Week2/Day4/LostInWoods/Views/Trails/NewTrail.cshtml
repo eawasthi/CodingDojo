@@ -1,0 +1,40 @@
+
+<h1>Add A New Trail</h1>
+
+<a href="/">Go Home</a>
+
+<div>
+    @{
+        foreach(var error in ViewBag.Errors)
+        {
+            //If there are any errors for a field...
+            if(@error.Errors.Count > 0)
+            {
+                // We show the first error for that field
+                <p>@error.Errors[0].ErrorMessage</p>
+            }
+        }
+    }
+</div>
+
+<form action="/create" method="post">
+<div class="form-group">
+<label for="trailname">Trail Name: </label><input class="form-control" type="text" id="trailname" name="trail_name" placeholder="Trail Name">
+</div>
+<div class="form-group">
+<label for="description">Description: </label><input class="form-control" type="text" id="description" name="description" placeholder="Description">
+</div>
+<div class="form-group">
+<label for="trail_length">Trail Length: </label><input class="form-control" type="text" id="trail_length" name="trail_length" placeholder="Trail Length">
+</div>
+<div class="form-group">
+<label for="elevation_change">Elevation Change: </label><input class="form-control" type="text" id="elevation_change" name="elavation_change" placeholder="elavation_change">
+</div>
+<div class="form-group">
+<label for="longitude">Longitude: </label><input class="form-control" type="text" id="longitude" name="longitude" placeholder="Longitude">
+</div>
+<div class="form-group">
+<label for="latitude">Latitude: </label><input  class="form-control" type="text" id="latitude" name="latitude" placeholder="Latitude">
+</div>
+<p><input class="btn btn-success" type="submit" value="Create Record!"></p>
+</form>

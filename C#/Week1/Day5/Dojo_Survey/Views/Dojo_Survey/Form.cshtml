@@ -4,6 +4,10 @@
 	<title>Basic Validation</title>
 </head>
 <body>
+	@foreach(var error in ViewBag.Errors)
+	{
+		<p>@error</p>
+	}
 	<form action='method' method='post'>
 		Name:<input type="text" name="name">
 		<h4>Dojo Location:</h4>

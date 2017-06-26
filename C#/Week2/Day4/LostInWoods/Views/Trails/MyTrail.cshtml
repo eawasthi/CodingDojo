@@ -1,0 +1,31 @@
+
+<a class="btn btn-danger" href="/">Go Home</a>
+
+@foreach(var trail in @ViewBag.CurrTrail)
+{
+<h1>@trail.trail_name</h1>
+
+<p>Description</p>
+<p>@trail.description</p>
+
+<p>Trail Length:</p>
+<p>@trail.trail_length</p>
+
+<p>Elevation Change</p>
+<p>@trail.elavation_change</p>
+
+<p>Longitude - </p>
+<p>@trail.longitude</p>
+
+<p>Latitude - </p>
+<p>@trail.latitude</p>
+
+
+<iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC_emmqQE-uld61SmmWZUnpR_XnJHuUoig
+    &q=@trail.trail_name&center=@trail.latitude, @trail.longitude" allowfullscreen>
+</iframe>
+}

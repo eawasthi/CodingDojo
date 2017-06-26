@@ -1,0 +1,21 @@
+<h1>Create a New Wish List Item</h1>
+<div>
+    @{
+        if(@ViewBag.ItemErrors != null)
+        {
+        foreach(var error in @ViewBag.ItemErrors)
+        {
+            //If there are any errors for a field...
+            if(@error.Errors.Count > 0)
+            {
+                // We show the first error for that field
+                <p>@error.Errors[0].ErrorMessage</p>
+            }
+        }
+        }
+    }
+</div>
+<form action="/submititem" method="post">
+Item/Product<input type="text" name="Product">
+<input type="submit" value="Add">
+</form>

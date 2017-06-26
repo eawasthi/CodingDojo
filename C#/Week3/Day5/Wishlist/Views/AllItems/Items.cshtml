@@ -1,0 +1,64 @@
+<h1>Hello @ViewBag.Username!</h1>
+<p>Your Wish List:</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Added By</th>
+            <th>Date Added</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    @foreach(var item in @ViewBag.AllItems)
+        {
+    <tbody>
+                <tr>
+                    <td>@item.Product</td>
+                    <td>@item.User.Name</td>
+                    <td>@item.CreatedAt.ToString("MMMM, dd, yyyy")</td>
+                    <td><a href="/delete/@item.ItemId">Delete</a></td>
+                </tr>
+             @foreach(var user in @ViewBag.allWishListItems)
+             {
+                    <tr>
+                    <td>@user.Item.Product</td>   
+                    <td>@user.Item.User.Name</td>
+                    <td>@user.Item.User.CreatedAt.ToString("MMMM, dd, yyyy")</td>
+                    <td><a href="">Remove from my list</a></td>
+                    </tr>
+             }
+    </tbody>
+     }
+</table>
+<h1>Other's Wish List:</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Added By</th>
+            <th>Date Added</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody> 
+    @foreach(var item in @ViewBag.allitems)
+        {
+            @foreach(var item2 in @ViewBag.allWishListItems)
+                {
+                    if(@item.ItemId != @item2.ItemId)
+                    {
+                        <tr>
+                            <td>@item.ItemId</td>
+
+                            <td><a href="/addWish/@item.ItemId">Add to my Wishlist</a></td>
+                        </tr>  
+                    }
+                }                
+        }
+    </tbody>
+</table>
+
+<a href="/additem">Add Item</a>
+
+
+

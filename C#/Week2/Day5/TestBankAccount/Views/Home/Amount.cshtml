@@ -1,0 +1,28 @@
+<h1>Welcome @ViewBag.UserName!</h1>
+
+
+<p>Deposit/Withdraw<form action="/accountprocess" method="post"></p>
+<input type="number" name="Amount">
+<input type="submit" value="Submit">
+</form>
+<table>
+    <thead>
+         <tr>
+             <th>Amount</th>
+             <th>Date</th>
+         </tr>
+    </thead>
+    <tbody>
+    @{
+        foreach(var info in @ViewBag.AmountInfo1)
+        {
+        <tr>
+            <td>@info.Amount</td>
+            <td>@info.Created_at</td>
+        </tr>
+        }
+    }
+    </tbody>
+</table>
+
+
